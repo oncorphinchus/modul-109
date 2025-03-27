@@ -1,69 +1,86 @@
-# Welcome to your Lovable project
+# Cloud Classroom Catalyst
 
-## Project info
+Ein Projekt zur Analyse und Implementierung einer Cloud-Lösung für die Primarschule Orladikofen.
 
-**URL**: https://lovable.dev/projects/20e48a8d-5e46-4fc7-bcfe-102fda0886ba
+## Über das Projekt
 
-## How can I edit this code?
+Die Primarschule Orladikofen plant eine digitale Transformation für die Verbesserung der Zusammenarbeit, Flexibilität und Nutzung moderner Technologien. Dieses Projekt analysiert und vergleicht zwei mögliche Lösungsansätze:
 
-There are several ways of editing your application.
+1. **Microsoft Cloud-Lösung** - Eine vollständig cloudbasierte Lösung mit Microsoft 365, Entra ID und modernen Endgeräten
+2. **On-Premise-Lösung** - Eine hybride Lösung mit lokalen Servern und Cloud-Diensten
 
-**Use Lovable**
+## Technologien
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/20e48a8d-5e46-4fc7-bcfe-102fda0886ba) and start prompting.
+- React mit TypeScript
+- Vite als Build-Tool
+- TailwindCSS für Styling
+- Framer Motion für Animationen
+- React Router für Navigation
+- Shadcn UI Komponenten
 
-Changes made via Lovable will be committed automatically to this repo.
+## Lokale Entwicklung
 
-**Use your preferred IDE**
+1. Abhängigkeiten installieren:
+   ```bash
+   npm install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Entwicklungsserver starten:
+   ```bash
+   npm run dev
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+3. Build erstellen:
+   ```bash
+   npm run build
+   ```
 
-Follow these steps:
+4. Build lokal testen:
+   ```bash
+   npm run preview
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Vercel Deployment
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Das Projekt ist für Vercel-Deployment konfiguriert. Um das Projekt auf Vercel zu deployen:
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Option 1: Über die Vercel-Weboberfläche
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1. Bei [Vercel](https://vercel.com) anmelden
+2. "New Project" auswählen
+3. Das GitHub-Repository importieren
+4. Die Standardeinstellungen belassen (Vite wird automatisch erkannt)
+5. "Deploy" klicken
 
-**Edit a file directly in GitHub**
+### Option 2: Mit Vercel CLI
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Vercel CLI installieren:
+   ```bash
+   npm install -g vercel
+   ```
 
-**Use GitHub Codespaces**
+2. Im Projektverzeichnis anmelden:
+   ```bash
+   vercel login
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. Projekt deployen:
+   ```bash
+   vercel
+   ```
 
-## What technologies are used for this project?
+4. Für Produktionsdeployment:
+   ```bash
+   vercel --prod
+   ```
 
-This project is built with .
+## Projektstruktur
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `/src/components` - Wiederverwendbare UI-Komponenten
+- `/src/pages` - Hauptseiten der Anwendung
+- `/src/lib` - Hilfsfunktionen und Utilities
+- `/public` - Statische Assets
 
-## How can I deploy this project?
+## Lizenz
 
-Simply open [Lovable](https://lovable.dev/projects/20e48a8d-5e46-4fc7-bcfe-102fda0886ba) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Dieses Projekt wurde für den ÜK-Modul 109 erstellt.
