@@ -3,6 +3,9 @@ import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import Commission from "@/components/Commission";
+import Architecture from "@/components/Architecture";
+import Implementation from "@/components/Implementation";
 import Solutions from "@/components/Solutions";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
@@ -41,6 +44,9 @@ const Index = () => {
       <ScrollReveal>
         <Navbar />
         <Hero />
+        <Commission />
+        <Architecture />
+        <Implementation />
         <Features />
         <Solutions />
         <Testimonials />

@@ -43,20 +43,20 @@ const Hero = () => {
       <div className="section z-10 flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="md:w-1/2 reveal">
           <div className="inline-block px-3 py-1 mb-6 rounded-full bg-azure/10 text-azure font-medium text-sm">
-            Digital Transformation for Primary Education
+            Enterprise IT Solutions Provider
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
-            Cloud-Powered <span className="text-azure">Education</span> for Tomorrow's Leaders
+            Secure <span className="text-azure">Education Infrastructure</span> for Digital Growth
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg text-balance">
-            Secure, collaborative, and innovative IT infrastructure designed specifically for primary schools using Microsoft's integrated cloud solutions.
+            We design, implement and maintain Microsoft cloud solutions that transform primary schools into modern, secure digital learning environments.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button className="button-primary">
-              Schedule a Demo
+              Request a Consultation
             </Button>
             <Button variant="outline" className="button-secondary">
-              Learn More
+              View Our Case Studies
             </Button>
           </div>
           <div className="mt-12 flex flex-col sm:flex-row gap-8">
@@ -64,13 +64,13 @@ const Hero = () => {
               <div className="p-2 rounded-full bg-azure/10">
                 <Users size={20} className="text-azure" />
               </div>
-              <span className="font-medium">Collaborative Tools</span>
+              <span className="font-medium">Microsoft Partner</span>
             </div>
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-full bg-azure/10">
                 <ShieldCheck size={20} className="text-azure" />
               </div>
-              <span className="font-medium">Secure Environment</span>
+              <span className="font-medium">ISO 27001 Certified</span>
             </div>
           </div>
         </div>

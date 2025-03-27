@@ -40,6 +40,24 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <a
+            href="#commission"
+            className="text-foreground/80 hover:text-azure transition-colors font-medium"
+          >
+            Commission
+          </a>
+          <a
+            href="#architecture"
+            className="text-foreground/80 hover:text-azure transition-colors font-medium"
+          >
+            Architecture
+          </a>
+          <a
+            href="#implementation"
+            className="text-foreground/80 hover:text-azure transition-colors font-medium"
+          >
+            Implementation
+          </a>
+          <a
             href="#features"
             className="text-foreground/80 hover:text-azure transition-colors font-medium"
           >
@@ -50,12 +68,6 @@ const Navbar = () => {
             className="text-foreground/80 hover:text-azure transition-colors font-medium"
           >
             Solutions
-          </a>
-          <a
-            href="#testimonials"
-            className="text-foreground/80 hover:text-azure transition-colors font-medium"
-          >
-            Testimonials
           </a>
           <a
             href="#contact"
@@ -84,6 +96,27 @@ const Navbar = () => {
       {isMenuOpen && (
         <nav className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6 flex flex-col space-y-4 animate-fade-in-down">
           <a
+            href="#commission"
+            className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
+            onClick={toggleMenu}
+          >
+            Commission
+          </a>
+          <a
+            href="#architecture"
+            className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
+            onClick={toggleMenu}
+          >
+            Architecture
+          </a>
+          <a
+            href="#implementation"
+            className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
+            onClick={toggleMenu}
+          >
+            Implementation
+          </a>
+          <a
             href="#features"
             className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
             onClick={toggleMenu}
@@ -96,13 +129,6 @@ const Navbar = () => {
             onClick={toggleMenu}
           >
             Solutions
-          </a>
-          <a
-            href="#testimonials"
-            className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
-            onClick={toggleMenu}
-          >
-            Testimonials
           </a>
           <a
             href="#contact"
