@@ -149,7 +149,7 @@ const Variantenanalyse = () => {
                       {
                         name: "Implementierungskosten",
                         cloud: "CHF 6'000 (60h à CHF 100)",
-                        onPrem: "CHF 15'000 (150h à CHF 100)"
+                        onPrem: "CHF 6'000 (60h à CHF 100)"
                       },
                       {
                         name: "Wartungskosten (jährlich)",
@@ -169,7 +169,7 @@ const Variantenanalyse = () => {
                       {
                         name: "5-Jahres Gesamtkosten",
                         cloud: "CHF 82'460 - 90'460",
-                        onPrem: "CHF 137'000 - 177'000"
+                        onPrem: "CHF 128'000 - 168'000"
                       }
                     ].map((row, index) => (
                       <div key={index} className={`grid grid-cols-3 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} ${index === 9 ? 'font-semibold bg-gray-50' : ''}`}>
