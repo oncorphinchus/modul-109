@@ -227,12 +227,7 @@ const Implementation = () => {
           </div>
         </div>
         
-        <div className="mt-12 text-center">
-          <Button className="group button-primary">
-            <span>Detaillierte Technische Spezifikation</span>
-            <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </Button>
-        </div>
+
       </div>
     </section>
   );
