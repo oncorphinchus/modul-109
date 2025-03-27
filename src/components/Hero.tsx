@@ -43,22 +43,15 @@ const Hero = () => {
       <div className="section z-10 flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="md:w-1/2 reveal">
           <div className="inline-block px-3 py-1 mb-6 rounded-full bg-azure/10 text-azure font-medium text-sm">
-            Enterprise IT Solutions Provider
+            ICT-Werk IT Solutions Provider
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
-            Secure <span className="text-azure">Education Infrastructure</span> for Digital Growth
+            Sichere <span className="text-azure">Bildungs Infrastruktur</span> für Digitales Wachsen
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg text-balance">
-            We design, implement and maintain Microsoft cloud solutions that transform primary schools into modern, secure digital learning environments.
+            Wir entwickeln, implementieren und pflegen Microsoft Cloud-Lösungen, die Primarschulen in modern, sicheres digitales Lernen umwandeln.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Button className="button-primary">
-              Request a Consultation
-            </Button>
-            <Button variant="outline" className="button-secondary">
-              View Our Case Studies
-            </Button>
-          </div>
+
           <div className="mt-12 flex flex-col sm:flex-row gap-8">
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-full bg-azure/10">
@@ -70,7 +63,7 @@ const Hero = () => {
               <div className="p-2 rounded-full bg-azure/10">
                 <ShieldCheck size={20} className="text-azure" />
               </div>
-              <span className="font-medium">ISO 27001 Certified</span>
+              <span className="font-medium">ISO 27001 Zertifiziert</span>
             </div>
           </div>
         </div>
@@ -78,7 +71,7 @@ const Hero = () => {
           <div className="relative">
             <div className="glass rounded-2xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                src="https://metro.co.uk/wp-content/uploads/2019/11/Screenshot-2019-11-20-at-18.51.30-cd73.png?w=646-1.2.1&auto=format&fit=crop&w=1200&q=80" 
                 alt="Students collaborating with Surface notebooks" 
                 className="w-full h-auto object-cover"
               />

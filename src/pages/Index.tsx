@@ -1,15 +1,11 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Features from "@/components/Features";
 import Commission from "@/components/Commission";
 import Architecture from "@/components/Architecture";
+import Kernfunktionen from "@/components/Kernfunktionen";
+import Datenschutz from "@/components/Datenschutz";
 import Implementation from "@/components/Implementation";
-import Solutions from "@/components/Solutions";
-import Testimonials from "@/components/Testimonials";
-import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const Index = () => {
@@ -46,12 +42,9 @@ const Index = () => {
         <Hero />
         <Commission />
         <Architecture />
+        <Kernfunktionen />
+        <Datenschutz />
         <Implementation />
-        <Features />
-        <Solutions />
-        <Testimonials />
-        <CTA />
-        <Footer />
       </ScrollReveal>
     </div>
   );

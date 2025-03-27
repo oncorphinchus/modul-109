@@ -1,12 +1,14 @@
-
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +25,10 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const getHref = (sectionId) => {
+    return isHomePage ? `#${sectionId}` : `/#${sectionId}`;
+  };
+
   return (
     <header
       className={cn(
@@ -34,52 +40,50 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <div className="mr-2 text-azure-dark font-bold text-3xl">CloudEdu</div>
+          <a href="/" className="flex items-center">
+            <img src="/images/ILV_Logo.png" alt="ICT-Werk Logo" className="h-10 mr-3" />
+            <div className="text-azure-dark font-bold text-3xl">ICT-Werk</div>
+          </a>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <a
-            href="#commission"
+            href={getHref("commission")}
             className="text-foreground/80 hover:text-azure transition-colors font-medium"
           >
-            Commission
+            Auftrag
           </a>
           <a
-            href="#architecture"
+            href={getHref("architecture")}
             className="text-foreground/80 hover:text-azure transition-colors font-medium"
           >
-            Architecture
+            Architektur
           </a>
           <a
-            href="#implementation"
+            href={getHref("kernfunktionen")}
             className="text-foreground/80 hover:text-azure transition-colors font-medium"
           >
-            Implementation
+            Kernfunktionen
           </a>
           <a
-            href="#features"
+            href={getHref("datenschutz")}
             className="text-foreground/80 hover:text-azure transition-colors font-medium"
           >
-            Features
+            Datenschutz
           </a>
           <a
-            href="#solutions"
+            href={getHref("implementation")}
             className="text-foreground/80 hover:text-azure transition-colors font-medium"
           >
-            Solutions
+            Implementierung
           </a>
           <a
-            href="#contact"
+            href="/variantenanalyse"
             className="text-foreground/80 hover:text-azure transition-colors font-medium"
           >
-            Contact
+            Variantenanalyse
           </a>
-          <Button 
-            className="ml-4 bg-azure hover:bg-azure-dark text-white rounded-full px-6"
-          >
-            Get Started
-          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -96,52 +100,47 @@ const Navbar = () => {
       {isMenuOpen && (
         <nav className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6 flex flex-col space-y-4 animate-fade-in-down">
           <a
-            href="#commission"
+            href={getHref("commission")}
             className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
             onClick={toggleMenu}
           >
-            Commission
+            Auftrag
           </a>
           <a
-            href="#architecture"
+            href={getHref("architecture")}
             className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
             onClick={toggleMenu}
           >
-            Architecture
+            Architektur
           </a>
           <a
-            href="#implementation"
+            href={getHref("kernfunktionen")}
             className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
             onClick={toggleMenu}
           >
-            Implementation
+            Kernfunktionen
           </a>
           <a
-            href="#features"
+            href={getHref("datenschutz")}
             className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
             onClick={toggleMenu}
           >
-            Features
+            Datenschutz
           </a>
           <a
-            href="#solutions"
+            href={getHref("implementation")}
             className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
             onClick={toggleMenu}
           >
-            Solutions
+            Implementierung
           </a>
           <a
-            href="#contact"
+            href="/variantenanalyse"
             className="text-foreground/80 hover:text-azure py-2 transition-colors font-medium"
             onClick={toggleMenu}
           >
-            Contact
+            Variantenanalyse
           </a>
-          <Button 
-            className="mt-2 bg-azure hover:bg-azure-dark text-white rounded-full"
-          >
-            Get Started
-          </Button>
         </nav>
       )}
     </header>
