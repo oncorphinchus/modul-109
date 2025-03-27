@@ -1,10 +1,11 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 210 100% 37%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -32,22 +33,15 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +90,63 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/40 backdrop-blur-lg border border-white/30 shadow-md;
+  }
+  
+  .glass-dark {
+    @apply bg-black/10 backdrop-blur-lg border border-white/10 shadow-md;
+  }
+  
+  .button-primary {
+    @apply py-4 px-8 rounded-full bg-azure text-white transition-all
+    hover:bg-azure-dark hover:shadow-lg hover:translate-y-[-2px]
+    active:translate-y-[0px] active:shadow-md
+    focus:outline-none focus:ring-2 focus:ring-azure focus:ring-offset-2;
+  }
+  
+  .button-secondary {
+    @apply py-4 px-8 rounded-full bg-white text-azure border border-azure transition-all
+    hover:bg-azure/5 hover:shadow-md
+    active:bg-azure/10
+    focus:outline-none focus:ring-2 focus:ring-azure focus:ring-offset-2;
+  }
+  
+  .section {
+    @apply py-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto;
+  }
+  
+  .feature-card {
+    @apply glass rounded-2xl p-8 transition-all duration-300
+    hover:shadow-xl hover:translate-y-[-5px];
+  }
+  
+  .reveal {
+    @apply opacity-0;
+  }
+  
+  .reveal.active {
+    @apply animate-fade-in-up;
+  }
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 120, 212, 0.2), transparent);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
