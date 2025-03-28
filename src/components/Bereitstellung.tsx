@@ -349,57 +349,7 @@ const Bereitstellung = () => {
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Additional Resources */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 reveal">
-          <div className="glass p-4 sm:p-6 rounded-xl border border-azure/20">
-            <div className="flex items-center mb-4">
-              <div className="p-2 sm:p-3 bg-azure/10 rounded-full mr-3 md:mr-4">
-                <FileText size={20} className="text-azure" />
-              </div>
-              <h4 className="font-bold">Dokumentation</h4>
-            </div>
-            <p className="text-xs sm:text-sm text-muted-foreground mb-4 md:mb-6">
-              Umfassende Anleitungen und technische Dokumentation für den gesamten Bereitstellungsprozess.
-            </p>
-            <Button variant="outline" className="w-full text-xs sm:text-sm transition-all duration-200">
-              <span>Dokumentation ansehen</span>
-              <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-            </Button>
-          </div>
-
-          <div className="glass p-4 sm:p-6 rounded-xl border border-azure/20">
-            <div className="flex items-center mb-4">
-              <div className="p-2 sm:p-3 bg-azure/10 rounded-full mr-3 md:mr-4">
-                <DownloadCloud size={20} className="text-azure" />
-              </div>
-              <h4 className="font-bold">Vorlagen & Skripte</h4>
-            </div>
-            <p className="text-xs sm:text-sm text-muted-foreground mb-4 md:mb-6">
-              Vorgefertigte Konfigurationen und Automatisierungsskripte für eine effiziente Bereitstellung.
-            </p>
-            <Button variant="outline" className="w-full text-xs sm:text-sm transition-all duration-200">
-              <span>Ressourcen herunterladen</span>
-              <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-            </Button>
-          </div>
-
-          <div className="glass p-4 sm:p-6 rounded-xl border border-azure/20">
-            <div className="flex items-center mb-4">
-              <div className="p-2 sm:p-3 bg-azure/10 rounded-full mr-3 md:mr-4">
-                <Wrench size={20} className="text-azure" />
-              </div>
-              <h4 className="font-bold">Support & Schulung</h4>
-            </div>
-            <p className="text-xs sm:text-sm text-muted-foreground mb-4 md:mb-6">
-              Professionelle Unterstützung und Schulungsmaterialien für Administratoren und Endbenutzer.
-            </p>
-            <Button variant="outline" className="w-full text-xs sm:text-sm transition-all duration-200">
-              <span>Support kontaktieren</span>
-              <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-            </Button>
-          </div>
         </div>
       </div>
     </section>
