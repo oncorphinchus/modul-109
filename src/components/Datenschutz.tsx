@@ -1,5 +1,5 @@
 import React from "react";
-import { ShieldCheck, Database, Lock, BarChart, CheckCircle, Shield, FileText, EyeOff, Users, Key, Globe } from "lucide-react";
+import { FileText, CheckCircle, Shield, Database, Lock, Key, Globe, Users, EyeOff } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Datenschutz = () => {
@@ -8,25 +8,18 @@ const Datenschutz = () => {
       <div className="container px-4 mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-20 reveal">
           <div className="inline-block px-3 py-1 mb-6 rounded-full bg-azure/10 text-azure font-medium text-sm">
-            Datenschutz & Sicherheit
+            Datenschutz
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Datenklassifizierungssystem
+            Datenklassifizierungssystem
           </h2>
           <p className="text-lg text-muted-foreground">
-          Unser detailliertes Klassifizierungsmodell stellt sicher, dass jede Art von Daten angemessen geschützt wird.
+            Unser detailliertes Klassifizierungsmodell stellt sicher, dass jede Art von Daten angemessen geschützt wird.
           </p>
         </div>
 
         {/* Data Classification System */}
         <div className="mb-24">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-2xl font-bold mb-4"></h2>
-            <p className="text-lg text-muted-foreground">
-              
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Klasse 1: Geheim */}
             <motion.div
@@ -54,8 +47,8 @@ const Datenschutz = () => {
                   <span className="text-xs text-muted-foreground">Separate Speicherung</span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <BarChart size={14} className="text-red-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-xs text-muted-foreground">Zugriffskontrolle mit Logging</span>
+                  <EyeOff size={14} className="text-red-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-xs text-muted-foreground">Offline-Archivierung (Blu-ray)</span>
                 </div>
               </div>
             </motion.div>
@@ -156,148 +149,6 @@ const Datenschutz = () => {
               </div>
             </motion.div>
           </div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
-          {/* Security Section */}
-          <motion.div 
-            className="glass p-8 rounded-2xl border border-azure/20"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="flex items-center mb-8">
-              <div className="p-4 bg-azure/10 rounded-full mr-6">
-                <ShieldCheck size={36} className="text-azure" />
-              </div>
-              <h3 className="text-2xl font-bold">Umfassende Sicherheitslösung</h3>
-            </div>
-            
-            <p className="text-lg text-muted-foreground mb-8">
-              Mehrschichtige Sicherheitsmaßnahmen zum Schutz sensibler Schuldaten gemäß dem Datenschutzkonzept.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-background/70 rounded-xl p-6 border border-border">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="p-2 rounded-full bg-azure/10 mt-1 flex-shrink-0">
-                    <CheckCircle size={16} className="text-azure" />
-                  </div>
-                  <h4 className="font-medium">Datenklassifizierung</h4>
-                </div>
-                <p className="text-sm text-muted-foreground pl-9">
-                  Vier Klassifizierungsstufen mit entsprechenden Schutzmaßnahmen für unterschiedlich sensible Daten.
-                </p>
-              </div>
-              
-              <div className="bg-background/70 rounded-xl p-6 border border-border">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="p-2 rounded-full bg-azure/10 mt-1 flex-shrink-0">
-                    <CheckCircle size={16} className="text-azure" />
-                  </div>
-                  <h4 className="font-medium">Endpunktsicherheit</h4>
-                </div>
-                <p className="text-sm text-muted-foreground pl-9">
-                  Microsoft Defender zum Schutz vor Malware und Phishing-Angriffen auf allen Geräten.
-                </p>
-              </div>
-              
-              <div className="bg-background/70 rounded-xl p-6 border border-border">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="p-2 rounded-full bg-azure/10 mt-1 flex-shrink-0">
-                    <CheckCircle size={16} className="text-azure" />
-                  </div>
-                  <h4 className="font-medium">Verschlüsselung</h4>
-                </div>
-                <p className="text-sm text-muted-foreground pl-9">
-                  End-to-End-Verschlüsselung für alle sensiblen Daten während der Übertragung und Speicherung.
-                </p>
-              </div>
-              
-              <div className="bg-background/70 rounded-xl p-6 border border-border">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="p-2 rounded-full bg-azure/10 mt-1 flex-shrink-0">
-                    <CheckCircle size={16} className="text-azure" />
-                  </div>
-                  <h4 className="font-medium">Überwachung & Compliance</h4>
-                </div>
-                <p className="text-sm text-muted-foreground pl-9">
-                  Kontinuierliche Sicherheitsüberwachung und detaillierte Auditprotokolle für alle Systeme.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Security Measures Section */}
-          <motion.div 
-            className="glass p-8 rounded-2xl border border-azure/20"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="flex items-center mb-8">
-              <div className="p-4 bg-azure/10 rounded-full mr-6">
-                <Lock size={36} className="text-azure" />
-              </div>
-              <h3 className="text-2xl font-bold">Sicherheitsmaßnahmen</h3>
-            </div>
-            
-            <p className="text-lg text-muted-foreground mb-8">
-              Umfassende Sicherheitsarchitektur zum Schutz aller Daten und Benutzer vor digitalen Bedrohungen.
-            </p>
-            
-            <div className="space-y-5">
-              <div className="flex items-start gap-4">
-                <div className="p-2 rounded-full bg-azure/10 mt-1 flex-shrink-0">
-                  <Key size={18} className="text-azure" />
-                </div>
-                <div>
-                  <h4 className="font-medium mb-1">Multi-Faktor-Authentifizierung</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Obligatorische Mehrfaktor-Authentifizierung für alle Mitarbeiter und Eltern, um unbefugten Zugriff zu verhindern.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="p-2 rounded-full bg-azure/10 mt-1 flex-shrink-0">
-                  <ShieldCheck size={18} className="text-azure" />
-                </div>
-                <div>
-                  <h4 className="font-medium mb-1">Bedingte Zugriffspolicies</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Präzise Zugriffskontrolle basierend auf Benutzerrolle, Gerätetyp, Standort und Datensensitivität.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="p-2 rounded-full bg-azure/10 mt-1 flex-shrink-0">
-                  <Database size={18} className="text-azure" />
-                </div>
-                <div>
-                  <h4 className="font-medium mb-1">Verschlüsselter Datenspeicher</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Mehrschichtige Verschlüsselung mit Klassifizierungsschutz für alle gespeicherten Daten in der Cloud.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="p-2 rounded-full bg-azure/10 mt-1 flex-shrink-0">
-                  <BarChart size={18} className="text-azure" />
-                </div>
-                <div>
-                  <h4 className="font-medium mb-1">Überwachung und Protokollierung</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Vollständige Protokollierung aller Zugriffe auf sensible Daten und automatische Erkennung verdächtiger Aktivitäten.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
 
         {/* Compliance Section */}
@@ -417,9 +268,6 @@ const Datenschutz = () => {
             </motion.div>
           </div>
         </div>
-
-    
- 
       </div>
     </section>
   );

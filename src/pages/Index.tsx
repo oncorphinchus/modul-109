@@ -5,8 +5,9 @@ import Commission from "@/components/Commission";
 import Architecture from "@/components/Architecture";
 import Kernfunktionen from "@/components/Kernfunktionen";
 import Datenschutz from "@/components/Datenschutz";
-import Implementation from "@/components/Implementation";
 import ScrollReveal from "@/components/ScrollReveal";
+import Sicherheit from "@/components/Sicherheit";
+import Bereitstellung from "@/components/Bereitstellung";
 
 const Index = () => {
   useEffect(() => {
@@ -44,7 +45,8 @@ const Index = () => {
         <Architecture />
         <Kernfunktionen />
         <Datenschutz />
-        <Implementation />
+        <Sicherheit />
+        <Bereitstellung />
       </ScrollReveal>
     </div>
   );

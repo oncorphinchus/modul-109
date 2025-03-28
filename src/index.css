@@ -1,11 +1,12 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
+    --header-height: 4rem;
+
+    --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -14,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 210 100% 37%;
+    --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -33,7 +34,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -43,6 +44,21 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --azure: 210 100% 41.6%;
+    --azure-dark: 210 100% 30%;
+    --azure-light: 210 80% 61%;
+    --azure-lightest: 210 70% 95%;
+
+    --cloud: 205 95% 85%;
+    --cloud-light: 205 65% 94%;
+    --cloud-dark: 205 95% 75%;
+
+    --sidebar: 214.3 31.8% 91.4%;
+    --sidebar-brand: 222.2 47.4% 11.2%;
+    --sidebar-muted: 215.4 16.3% 46.9%;
+    --sidebar-activeborder: 0 0% 0%;
+    --sidebar-indicator: 210 100% 41.6%;
   }
 
   .dark {
@@ -81,6 +97,39 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --azure: 210 80% 50%;
+    --azure-dark: 210 80% 35%;
+    --azure-light: 210 80% 75%;
+    --azure-lightest: 210 60% 30%;
+
+    --cloud: 205 30% 15%;
+    --cloud-light: 205 25% 20%;
+    --cloud-dark: 205 35% 10%;
+
+    --sidebar: 222.2 84% 7%;
+    --sidebar-brand: 210 40% 98%;
+    --sidebar-muted: 215 20.2% 65.1%;
+    --sidebar-accent: 217.2 32.6% 13%;
+    --sidebar-activeborder: 0 0% 100%;
+    --sidebar-indicator: 210 80% 50%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-height) + 1rem);
+  }
+
+  @media (min-width: 640px) {
+    :root {
+      --header-height: 4.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --header-height: 5rem;
+    }
   }
 }
 
@@ -92,10 +141,6 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
-  }
-
-  html {
-    scroll-behavior: smooth;
   }
 }
 
@@ -149,4 +194,32 @@
 
 .text-balance {
   text-wrap: balance;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 120, 212, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 120, 212, 0.5);
 }

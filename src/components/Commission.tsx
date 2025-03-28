@@ -49,7 +49,7 @@ const Commission = () => {
                     <span className="text-red-500 font-bold text-xs">2</span>
                   </div>
                   <p className="text-muted-foreground">
-                  Sichere Umgebung für den Umgang mit sensiblen Schülerdaten gemäß Klassifizierungen
+                  Sichere Umgebung für den Umgang mit sensiblen Schülerdaten gemäss Klassifizierungen
                   </p>
                 </motion.div>
                 <motion.div 
@@ -140,9 +140,6 @@ const Commission = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Schrittweise Umsetzung
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Unser strukturierter Projektablaufplan unterteilt das Vorhaben in mehrere Arbeitspakete für eine effiziente und übersichtliche Durchführung.
-            </p>
           </div>
 
           <div className="mx-auto max-w-5xl">
@@ -257,7 +254,7 @@ const Commission = () => {
                         <div className="p-1 rounded-full bg-azure/10 mt-1">
                           <CheckCircle size={14} className="text-azure" />
                         </div>
-                        <span className="text-sm text-muted-foreground">Entwicklung eines maßgeschneiderten Sicherheits- und Datenschutzkonzepts</span>
+                        <span className="text-sm text-muted-foreground">Entwicklung eines massgeschneiderten Sicherheits- und Datenschutzkonzepts</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="p-1 rounded-full bg-azure/10 mt-1">
@@ -288,7 +285,7 @@ const Commission = () => {
                       <span className="text-sm font-normal text-muted-foreground bg-azure/10 text-azure px-3 py-1 rounded-full">1 Tag</span>
                     </div>
                     <p className="text-muted-foreground mb-4">
-                      Die effiziente Implementierung der Microsoft Cloud-Infrastruktur gemäß den erarbeiteten Konzepten und Anforderungen.
+                      Die effiziente Implementierung der Microsoft Cloud-Infrastruktur gemäss den erarbeiteten Konzepten und Anforderungen.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-start gap-2">
